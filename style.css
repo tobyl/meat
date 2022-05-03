@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  z-index: -2;
+}
+
+button {
+  appearance: none;
+  border: 1px solid #fff;
+  background: transparent;
+}
+
+#overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-color: rgba(0,0,0,0.25);
+  transition: background-color 1s ease-out;
+}
+
+p.lead {
+  font-size: 1.25rem;
+}
+
+/* titles */
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title span {
+  padding: 0 1rem;
+}
+
+.title:before {
+  content: '';
+  flex: 1;
+  border-top: 1px solid red;
+}
+
+.title:after {
+  content: '';
+  flex: 1;
+  border-top: 1px solid red;
+}
+
+/* starter page */
+
+header {
+  height: 100vh;
+  text-align: center;
+}
+
+header h1,
+header h2,
+header h3 {
+  font-family: 'Stardos Stencil', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(254, 254, 0);
+  text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+
+header h1 { font-size: 75px }
+header h2 { font-size: 65px }
+header h3 { font-size: 55px }
+
+/* main site */
+
+#wrapper {
+  display: none;
+}
+
+main {
+  padding: 0 15px;
+}
+
+/* footer */
+
+footer {
+  height: 300px;
+  padding: 0 15px;
+  text-align: center;
+}

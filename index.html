@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Meat II: The Porkening</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Toby is a web developer living in Windsor-Essex County. He enjoys cooking, woodworking and building on the web.">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <meta property="og:title" content="leftly.me">
+    <meta property="og:site_name" content="leftly.me">
+    <meta property="og:url" content="https://leftly.me/">
+    <meta property="og:description" content="Toby is a web developer living in Windsor-Essex County. He enjoys cooking, woodworking and building on the web.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://leftly.me/assets/img/favicon/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <video autoplay muted>
+      <source src="meat.mp4" type="video/mp4">
+    </video>
+
+    <div id="overlay"></div>
+
+    <header>
+      <h1>Meat II:</h1>
+      <h2>The Porkening</h2>
+      <h3>
+        We be Beefin'
+        <span>(again)</span>
+      </h3>
+      <h3>This time it's pork-sonal</h3>
+      <button id="lets-go">
+        Fuck Yeah!
+      </button>
+    </header>
+
+    <div id="wrapper">
+      <main>
+        <section>
+          <article>
+            <h2 class="title"><span>What?</span></h2>
+            <p class="lead">A meatfest. THE meatfest. The meatfest to end all meatfests.</p>
+            <p>2018 was a simpler time. No pandemic. Russia had only invaded Ukraine once or twice. And the first meat party took place.</p>
+            <p>Now it's time for round two. Meat II: The Porkening will be a celebration of meat of all kinds.</p>
+            <p>More meat. More fire. More tractor. More hot tub. Bring a bathing suit!</p>
+          </article>
+          <article>
+            <h2 class="title"><span>Who?</span></h2>
+            <p class="lead">If you're reading this, then you. Possibly. It's a public site, so who knows.</p>
+            <p>You may have been lucky enough to be present at this first meat party, It'll be a similar crowd, with a few notable additions. Closer to the time I'll make a Facebook group, but in the mean time please <abbr title="Respondez Sil Vous Fucking Plait">RSVFP</abbr> </p>
+          </article>
+          <article>
+            <h2 class="title"><span>Where?</span></h2>
+            <p class="lead">I'm just gonna rip this band aid off real quick - it's in Cottam, down the road from Essex.</p>
+            <p>Why? The simple truth is that only one lesson was learned from the first meatfest: WE NEED MORE SPACE. More space = more meat. You'll have to trust me on that.</p>
+            <p>Also, I moved.</p>
+          </article>
+          <article>
+            <h2 class="title"><span>When?</span></h2>
+            <p class="lead">Tentatively, the weekend of August 19th. Cancel all other plans, you're not gonna want to miss this.</p>
+          </article>
+          <article>
+            <h2 class="title"><span>Why?</span></h2>
+            <p class="lead">Why did America send men to the moon? Because they could.</p>
+            <p>Why </p>
+          </article>
+        </section>
+        <section>
+          <h2>FAQs</h2>
+          <div class="faq-item">
+            <h3>I have to drive all the way to Cottam??</h3>
+            <p>Yes. You do. Fasten up that diaper and get comfortable with it. It'll be worth it, especially if <strong>YOU</strong> come, treasured invitee.</p>
+          </div>
+          <div class="faq-item">
+            <h3>What should I bring?</h3>
+            <p>A chair. Enough for you to drink to at least get tipsy. </p>
+          </div>
+          <div class="faq-item">
+            <h3>I was at the first party and I had some feedback...</h3>
+            <p>Of course you do. I put a lot of work into the first party, and 2.0 is shaping up to be even more work. That said, I welcome and respect all feedback - please feel free to direct any feedback to gfy@example.com.</p>
+          </div>
+        </section>
+      </main>
+      <footer>
+        footer
+      </footer>
+    </div>
+
+    <script>
+
+      const header = document.querySelector('header')
+      const wrapper = document.getElementById('wrapper')
+      const overlay = document.getElementById('overlay')
+      const letsGo = document.getElementById('lets-go')
+
+      const revealSite = () => {
+        wrapper.style.display = 'block'
+        overlay.style.backgroundColor = 'rgba(0,0,0,0.75)'
+        setTimeout(() => {
+          window.scroll({
+            top: header.offsetHeight,
+            behavior: 'smooth',
+          })
+        }, 500)
+      }
+
+      letsGo.addEventListener('click', revealSite)
+
+    </script>
+  </body>
+</html>
