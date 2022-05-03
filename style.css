@@ -24,6 +24,7 @@ button {
   text-transform: uppercase;
   letter-spacing: 1px;
   animation: pulse 5s infinite;
+  margin-top: 2rem;
 }
 
 button:hover {
@@ -90,9 +91,15 @@ header h3 {
   text-shadow: 2px 2px 1px rgb(0, 0, 0);
 }
 
-header h1 { font-size: 75px }
-header h2 { font-size: 65px }
-header h3 { font-size: 55px }
+header h1 { font-size: 60px }
+header h2 { font-size: 40px }
+header h3 { font-size: 30px }
+
+@media (min-width: 768px) {
+  header h1 { font-size: 75px }
+  header h2 { font-size: 65px }
+  header h3 { font-size: 55px }
+}
 
 /* main site */
 
