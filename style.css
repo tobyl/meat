@@ -1,26 +1,37 @@
 body {
   margin: 0;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  font-weight: 200;
   font-size: 17px;
-  line-height: 1.5;
+  line-height: 1.65;
+  letter-spacing: 1px;
   color: #fff;
 }
 
-video {
+#video-wrapper {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 0;
+  top: 0;
+  width: 100vw;
   height: 100vh;
   z-index: -2;
 }
 
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
 button {
   appearance: none;
-  border: 1px solid #fff;
-  background: transparent;
+  font-family: inherit;
+  border: 3px solid rgb(211, 116, 0);
+  background: rgba(0,0,0,0.5);
   color: #fff;
   font-size: 1.5rem;
+  font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 1px;
   animation: pulse 5s infinite;
@@ -49,6 +60,10 @@ p.lead {
   font-size: 1.25rem;
 }
 
+strong {
+  font-weight: 500;
+}
+
 /* titles */
 
 .title {
@@ -65,13 +80,25 @@ p.lead {
 .title:before {
   content: '';
   flex: 1;
-  border-top: 1px solid red;
+  border-top: 1px solid rgb(171, 0, 0);
 }
 
 .title:after {
   content: '';
   flex: 1;
-  border-top: 1px solid red;
+  border-top: 1px solid rgb(171, 0, 0);
+}
+
+h2#black-ops,
+h3#black-ops {
+  font-family: 'Black Ops One';
+  font-weight: 400;
+  font-size: 40px;
+  color: rgb(254, 254, 0);
+}
+
+h2#black-ops {
+  text-align: center;
 }
 
 /* starter page */
@@ -79,26 +106,47 @@ p.lead {
 header {
   height: 100vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 header h1,
 header h2,
 header h3 {
-  font-family: 'Stardos Stencil', sans-serif;
-  font-weight: 700;
+  font-family: 'Black Ops One', sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   color: rgb(254, 254, 0);
   text-shadow: 2px 2px 1px rgb(0, 0, 0);
+  margin: 0;
 }
 
-header h1 { font-size: 60px }
-header h2 { font-size: 40px }
-header h3 { font-size: 30px }
+header h1 { font-size: 70px; line-height: 1.25; }
+header h2 { font-size: 40px; line-height: 1.25; }
+header h3 { font-size: 32px; line-height: 1.25; }
 
 @media (min-width: 768px) {
   header h1 { font-size: 75px }
   header h2 { font-size: 65px }
   header h3 { font-size: 55px }
+}
+
+header hr,
+footer hr {
+  width: 10%;
+  margin: 0 auto;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  border-top: 1px solid #fff;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer hr {
+  width: 40%;
 }
 
 /* main site */
@@ -111,13 +159,25 @@ main {
   padding: 0 15px;
 }
 
+main h3 {
+  color: rgb(254, 254, 0);
+}
+
+@media (min-width: 768px) {
+  main {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
 /* footer */
 
 footer {
-  height: 300px;
-  padding: 0 15px;
+  padding: 03rem 15px;
   text-align: center;
 }
+
+footer h3 { font-size: 32px; line-height: 1.25; }
 
 /* animations */
 
