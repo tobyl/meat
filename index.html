@@ -5,8 +5,13 @@
     <title>Meat II: The Porkening</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Toby is a web developer living in Windsor-Essex County. He enjoys cooking, woodworking and building on the web.">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <meta property="og:title" content="Meat Party II: The Porkening">
     <meta property="og:site_name" content="Meat Party II">
     <meta property="og:url" content="https://tobyl.github.io/meat">
@@ -22,15 +27,22 @@
 
     <div id="video-wrapper">
       <video autoplay muted>
-        <source src="meat.mp4" type="video/mp4">
+        <source src="/assets/meat.mp4" type="video/mp4">
       </video>
     </div>
 
     <div id="overlay"></div>
 
     <header>
-      <h1>Meat II:</h1>
-      <h2>The Porkening</h2>
+      <div id="header-top">
+        <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NGZqb2UwaW4ybGFvN2p0ZHJxbGM2cG8zZjYgdG9ieWxlZnRseUBt&tmsrc=tobyleftly%40gmail.com" target="_blank">August 20, 2022 @ 3pm</a> 
+      </div>
+      <div>
+        <h1>Meat II:</h1>
+        <h2>The Porkening</h2>
+        <span class="left">🥓</span>
+        <span class="right">🥓</span>
+      </div>
       <hr />
       <h3>We Be <br />Beefin' Son</h3>
       <hr />
@@ -43,26 +55,49 @@
       <main>
         <section>
           <article>
+            <h2 class="title"><span>When?</span></h2>
+            <p class="lead">August 20, 2022. Cancel all other plans, you're not gonna want to miss this.</p>
+            <div class="text-center">
+              <a class="cal" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NGZqb2UwaW4ybGFvN2p0ZHJxbGM2cG8zZjYgdG9ieWxlZnRseUBt&tmsrc=tobyleftly%40gmail.com" target="_blank">
+                <img src="/assets/date.svg" alt="August 20, 2022" />
+              </a>
+            </div>
+            <p class="lead">
+              NEW For this year - Stay Overnight!
+            </p>
+            <p>
+              <a href="#stay" class="scroll-me btn">More Information</a>
+            </p>
+          </article>
+          <article>
             <h2 class="title"><span>What?</span></h2>
             <p class="lead">A meatfest. <strong>THE</strong> meatfest. The meatfest to end all meatfests.</p>
             <p>2018 was a simpler time. No pandemic. Russia had only invaded Ukraine once or twice. And the first meat party took place.</p>
             <p>Now it's time for round two. <strong>Meat II: The Porkening</strong> will be a celebration of meat of all kinds.</p>
             <p>More meat. More fire. More tractor. More hot tub. Bring a bathing suit!</p>
+            <p>Still on the fence? Anxious about spending more than 30 minutes talking to other human beings? Fear not! There'll be activities:</p>
+            <ul id="activities" class="clearfix meatlist">
+              <li><button class="cornhole question">Toby & Rita Cornhole</button></li>
+              <li><a href="https://en.wikipedia.org/wiki/Ladder_toss" target="_blank">Dangly Ball</a></li>
+              <li>Hot Tub Karaoke</li>
+              <li>Sunset Watching</li>
+              <li>Competitive Eating/Drinking</li>
+              <li>Amateur Stomach Pumping</li>
+            </ul>
+            <div id="cornhole" hidden>
+              <img src="img/cornhole.jpg">
+            </div>
           </article>
           <article>
             <h2 class="title"><span>Who?</span></h2>
             <p class="lead">If you're reading this, then you. Possibly. It's a public site, so who knows.</p>
-            <p>You may have been lucky enough to be present at this first meat party, It'll be a similar crowd, with a few notable additions. Closer to the time I'll make a Facebook group, but in the mean time please <abbr title="Respondez Sil Vous Fucking Plait">RSVFP</abbr> </p>
+            <p>You may have been lucky enough to be present at this first meat party, It'll be a similar crowd, with a few notable additions. Closer to the time I'll make a Facebook group, but in the mean time please <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHDtwHyv0IlU2UIz_ACVYmpAp4D-caAUBEXOf7i7VtjfP_kQ/viewform">RSVFP</a>. You can also find me on Facebook and I'll add you to the event.</p>
           </article>
           <article>
             <h2 class="title"><span>Where?</span></h2>
-            <p class="lead">I'm just gonna rip this band aid off real quick - it's in Cottam, down the road from Essex.</p>
+            <p class="lead">I'm just gonna rip this band-aid off real quick - it's in Cottam, down the road from Essex.</p>
             <p>Why? The simple truth is that only one lesson was learned from the first meatfest: WE NEED MORE SPACE. More space = more meat. You'll have to trust me on that.</p>
             <p>Also, I moved.</p>
-          </article>
-          <article>
-            <h2 class="title"><span>When?</span></h2>
-            <p class="lead">Tentatively, the weekend of August 19th. Cancel all other plans, you're not gonna want to miss this.</p>
           </article>
           <article>
             <h2 class="title"><span>Why?</span></h2>
@@ -77,8 +112,12 @@
             <p>Yes. You do. Fasten up that diaper and get comfortable with it. It'll be worth it, especially if <strong>YOU</strong> come, treasured invitee.</p>
           </div>
           <div class="faq-item">
+            <h3>What's on the menu?</h3>
+            <p>Kale, spinach and some quinoa… It's a meatfest, dummy! </p>
+          </div>
+          <div class="faq-item">
             <h3>What should I bring?</h3>
-            <p>A chair. Enough for you to drink to at least get tipsy. A bathing suit. And a colon strong enough to process at least a kilogram of pork and beef.</p>
+            <p>A chair. Enough for you to drink to at least get tipsy. A bathing suit. And a colon strong enough to process at least a kilogram of pork, beef and potato.</p>
           </div>
           <div class="faq-item">
             <h3>I was at the first party and I had some feedback...</h3>
@@ -92,9 +131,15 @@
             <h3>I'm a vegan, and I think..</h3>
             <p>Shut up, hippy!</p>
           </div>
-          <div class="faq-item">
+          <div class="faq-item" id="stay">
             <h3>Do I have to drive home at the end of the night?</h3>
-            <p>We have a ton of space, but not much in the way of spare beds or bedding. If you're interested in crashing, let me know and we can figure something out.</p>
+            <p>Not at all! I encourage safe drinking and meating, and meat and grease comas are a leading cause of tiredness and fatigue on our roads.</p>
+            <p>If you'd prefer not to go home, there are two options:</p>
+            <ul class="meatlist stacked">
+              <li>We have a decent amount of floor space, so feel free to bring an air mattress or sleeping bag. Space will be fist come, first served on the night!</li>
+              <li>We have a <strong>TON</strong> of outdoor space, so if you'd like to bring a tent, please feel free!</li>
+            </ul>
+            <p>Yeah, I know, most of us have been out of college far too long for this crap. But on the bright side, for those who stay there'll be a mini meatfest the following morning, with egg and bacon sammies.</p>
           </div>
         </section>
       </main>
@@ -103,12 +148,18 @@
         <h3 id="black-ops">
           This Time it's<br /> Pork-Sonal
         </h3>
+        <div id="footer-bottom"></div>
       </footer>
     </div>
 
+    <script src="lightbox.js"></script>
     <script>
 
+      const cornholeLb = basicLightbox.create(document.querySelector('#cornhole'))
+      document.querySelector('button.cornhole').onclick = cornholeLb.show
+
       const header = document.querySelector('header')
+      const headerTop = document.querySelector('#header-top')
       const wrapper = document.getElementById('wrapper')
       const overlay = document.getElementById('overlay')
       const letsGo = document.getElementById('lets-go')
@@ -117,14 +168,25 @@
         wrapper.style.display = 'block'
         overlay.style.backgroundColor = 'rgba(0,0,0,0.75)'
         setTimeout(() => {
+          headerTop.classList.add('hide')
           window.scroll({
             top: header.offsetHeight,
             behavior: 'smooth',
           })
-        }, 500)
+        }, 1250)
       }
 
       letsGo.addEventListener('click', revealSite)
+
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          }, 500)
+        })
+      })
 
     </script>
   </body>
