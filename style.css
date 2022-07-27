@@ -9,6 +9,11 @@
   --red: #D52928;
 }
 
+html {
+  overflow: -moz-scrollbars-vertical; 
+  overflow-y: scroll;
+}
+
 /* here we go */
 
 body {
